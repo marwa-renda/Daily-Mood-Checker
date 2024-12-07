@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Checker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container text-center mt-5">
+    <h1>Daily Mood Checker</h1>
+    <p class="lead">Enter your name and mood to receive a custom message!</p>
+
+    <form id="moodForm" class="form-inline justify-content-center">
+        <input type="text" id="name" class="form-control mb-2 mr-sm-2" placeholder="Your Name" required>
+        <input type="text" id="mood" class="form-control mb-2 mr-sm-2" placeholder="Your Mood (e.g., happy)" required>
+        <button type="button" onclick="checkMood()" class="btn btn-primary mb-2">Submit</button>
+    </form>
+
+    <div id="result" class="mt-4"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
